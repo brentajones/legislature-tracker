@@ -432,7 +432,7 @@ else {
         'Republican': 'R'
       }
     },
-    maxBills: 30,
+    maxBills: 100,
     substituteMatch: (/substituted/i),
     imagePath: './css/images/',
     templatePath: './js/app/templates/',
