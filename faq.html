@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+
+    <title>Missouri Legislature Tracker</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./dist/bootstrap.css" rel="stylesheet">
+    <link href="./dist/theme.css" rel="stylesheet">
+<link rel="stylesheet" href="http://stlpublicradio.github.io/legislature-tracker/dist/legislature-tracker.latest.css" type="text/css">
+    <!--[if lte IE 8]>
+      <link rel="stylesheet" href="./dist/legislature-tracker.latest.ie.css" type="text/css">
+
+    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+	  <script type="text/javascript" src="./dist/legislature-tracker.libs.js" charset="utf-8"></script>
+	  <script type="text/javascript" src="./dist/legislature-tracker.latest.min.js"></script>
+
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="http://news.stlpublicradio.org"><img class="logo" src="./dist/images/bg-station-bug.png"></a>
+	</div>
+        <div class="collapse navbar-collapse">
+		<ul class="nav navbar-nav">
+			<li><a href="./index.html">Tracker</a></li>
+			<li class="active"><a href="#">FAQ</a></li>
+		</ul>
+        </div>
+    </nav>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<h1>Frequently Asked Questions</h1>
+			<p class="lead">We intend to keep the bill tracker updated with selected new bills, bill events and links to stories throughout the legislative session.</p>
+			<p class="small">If you have questions that aren&#x27;t covered here or suggestions for bills to track, please email <a href="mailto:heggers@umsl.edu?Subject=Bill%20Tracker" target="_top">Issues &amp; Politics Editor Susan Hegger</a>.</p>
+		</div>
+	</div>
+	<div class="panel-group" id="accordion">      
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+						How do I view a bill&#x27;s text?
+					</a>
+				</h3>
+				<div id="collapseOne" class="panel-collapse collapse">
+					<div class="panel-body"><img class="pull-right img-thumbnail img-responsive" src="./dist/images/more_detail_circled.png"><p class="clearfix">Find the bill you want to view the text of and click &quot;More detail.&quot; This will open a panel with the bill&#x27;s sponsors, co-sponsors and recent actions taken by the legislature on the bill.</p>
+						<p class="clearfix"><img class="pull-right img-thumbnail img-responsive" src="./dist/images/sources_circled.png">Scroll down past the bill&#x27;s sponsors, co-sponsors and recent actions to &quot;Sources.&quot; These links will take you to the Missouri government website pages about the bill.</p>
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+							How do I link to an individual bill?
+						</a>
+					</h3>
+					<div id="collapseTwo" class="panel-collapse collapse">
+						<div class="panel-body">
+							<img class="pull-right img-thumbnail img-responsive" src="./dist/images/link_icon_circled.png">
+							<p class="clearfix">You can link to an individual bill in the tracker to bookmark it, send it via email, Tweet it, etc. Just find the bill you&#x27;d like to link and look for the chainlink icon next to the bill&#x27;s name.</p>
+							<img class="pull-right img-thumbnail img-responsive" src="./dist/images/url_circled.png">
+							<p>Once you&#x27;ve clicked on the link, the URL linking to the bill you were viewing will be in your browser&#x27;s location bar. It should look something like:	<code>mobilltracker.org/#/bill/SB%20616</code></br> 
+							<small>Note: The &quot;%20&quot; in the URL encodes a space, so this link is for SB 616.</small></p>
+							<p class="clearfix">You can copy and paste this URL to share a direct link to this bill in the tracker.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+</div><!-- /.container -->
+
+<script type="text/javascript">
+      (function($, w, undefined) {
+        var options = _(LT.defaultOptions).extend({
+          el: '#legislature-tracker-container',
+          state: 'MO', 
+          session: '2014',
+          OSKey: '7b006c11c5dd40ba89efc4e67901a0ce',
+          eKey: '0AirWnBDqOSL_dGZ6RVRtVTRuOGxLS05ZMXQwVlMxdGc',
+          imagePath: './dist/images/'
+        });
+  
+        var app = new LT.Application(options);
+  
+      })(jQuery, window);
+    </script>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="./dist/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+     var pageTrackerA = _gat._getTracker("UA-2139719-1");
+     pageTrackerA._initData();
+     pageTrackerA._trackPageview();
+
+     var pageTrackerB = _gat._getTracker("UA-1741309-15");
+     pageTrackerB._initData();
+     pageTrackerB._trackPageview();
+    </script>
+  </body>
+</html>
