@@ -42,34 +42,55 @@
 	</div>
         <div class="collapse navbar-collapse">
 		<ul class="nav navbar-nav">
-			<li class="active"><a href="#">Tracker</a></li>
-			<li><a href="./faq.html">FAQ</a></li>
+			<li><a href="./index.html">Tracker</a></li>
+			<li class="active"><a href="#">FAQ</a></li>
 		</ul>
         </div>
     </nav>
 
-    <div class="container">
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<h1>Frequently Asked Questions</h1>
+			<p class="lead">We intend to keep the bill tracker updated with selected new bills, bill events and links to stories throughout the legislative session.</p>
+			<p class="small">If you have questions that aren&#x27;t covered here or suggestions for bills to track, please email <a href="mailto:heggers@umsl.edu?Subject=Bill%20Tracker" target="_top">Issues &amp; Politics Editor Susan Hegger</a>.</p>
+		</div>
+	</div>
+	<div class="panel-group" id="accordion">      
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+						How do I view a bill&#x27;s text?
+					</a>
+				</h3>
+				<div id="collapseOne" class="panel-collapse collapse">
+					<div class="panel-body"><img class="pull-right img-thumbnail img-responsive" src="./dist/images/more_detail_circled.png"><p class="clearfix">Find the bill you want to view the text of and click &quot;More detail.&quot; This will open a panel with the bill&#x27;s sponsors, co-sponsors and recent actions taken by the legislature on the bill.</p>
+						<p class="clearfix"><img class="pull-right img-thumbnail img-responsive" src="./dist/images/sources_circled.png">Scroll down past the bill&#x27;s sponsors, co-sponsors and recent actions to &quot;Sources.&quot; These links will take you to the Missouri government website pages about the bill.</p>
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+							How do I link to an individual bill?
+						</a>
+					</h3>
+					<div id="collapseTwo" class="panel-collapse collapse">
+						<div class="panel-body">
+							<img class="pull-right img-thumbnail img-responsive" src="./dist/images/link_icon_circled.png">
+							<p class="clearfix">You can link to an individual bill in the tracker to bookmark it, send it via email, Tweet it, etc. Just find the bill you&#x27;d like to link and look for the chainlink icon next to the bill&#x27;s name.</p>
+							<img class="pull-right img-thumbnail img-responsive" src="./dist/images/url_circled.png">
+							<p>Once you&#x27;ve clicked on the link, the URL linking to the bill you were viewing will be in your browser&#x27;s location bar. It should look something like:	<code>mobilltracker.org/#/bill/SB%20616</code></br> 
+							<small>Note: The &quot;%20&quot; in the URL encodes a space, so this link is for SB 616.</small></p>
+							<p class="clearfix">You can copy and paste this URL to share a direct link to this bill in the tracker.</p>
+						</div>
+					</div>
+				</div>
+			</div>
 
-	    <div class="row">
-		    <div class="col-md-12">        <h1>Missouri Legislature Tracker</h1>
-		    </div></div>
-<div class="row">      <div class="col-sm-6 col-md-8">
-<p>	Welcome to St. Louis Public Radio and the Beacon's Missouri Legislature Tracker.
-</p>
-	<p>We've selected several bills to keep an eye on in the coming months. You can choose a category below, or click "Recent" to see the bills we're tracking that have had some action in the past 7 days.</p>
-
-	<p>Once you've chosen an area, you'll be able to see a list of bills and summaries. You can also click "More Detail" on any bill to see recent actions, sponsors and links to the bill on Missouri government Web sites.</p></div>
-	<div class="col-sm-6 col-md-4 hidden-xs">
-		<a href="http://news.stlpublicradio.org/programs/politically-speaking"><img class="center-block"  src="./dist/images/politically-speaking.jpg"></a></div></div>
-	        <div class="row"><div id="legislature-tracker-container">
-        </div></div>
-        <div id="licensing">
-    	        <p>Fork of MinnPost's Legislature Tracker. More info available on <a href="http://minnpost.github.io/legislature-tracker" title="Legislature Tracker">Github</a>.</p>
-    <p>Some icons provided by <a href="http://thenounproject.com" title="NounProject">The Noun Project</a>. Congress by Martha Ormiston; Energy by NDSTR; GayMarriage by MaurizioFusillo; Education by Thibault Geffroy; Time by Richard de Vos; Capital by Jonathan Keating; Paper by Tom Schott; Bank by Ilaria Baggio; Group by Alexandra Coscovelnita; Check mark by Spencer Cohen; Back by John Chapman; Gun by Edward Boatman.</p></div>
-      </div>
-</div>
-
-    </div><!-- /.container -->
+</div><!-- /.container -->
 
 <script type="text/javascript">
       (function($, w, undefined) {
