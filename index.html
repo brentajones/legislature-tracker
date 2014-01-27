@@ -1,108 +1,81 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Legislature Tracker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
 
-    <title>Missouri Legislature Tracker</title>
+  <!-- Include CSS -->
+  <link rel="stylesheet" href="./gh-pages/bootstrap-2.3.1.min.css" type="text/css">
+  <style type="text/css">
+    /* Customize the navbar links to be fill the entire space of the .navbar */
+    .navbar .navbar-inner {
+      padding: 0;
+    }
+    .navbar .nav {
+      margin: 0;
+      display: table;
+      width: 100%;
+    }
+    .navbar .nav li {
+      display: table-cell;
+      width: 1%;
+      float: none;
+    }
+    .navbar .nav li a {
+      font-weight: bold;
+      text-align: center;
+      border-left: 1px solid rgba(255,255,255,.75);
+      border-right: 1px solid rgba(0,0,0,.1);
+    }
+    .navbar .nav li:first-child a {
+      border-left: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    .navbar .nav li:last-child a {
+      border-right: 0;
+      border-radius: 0 3px 3px 0;
+    }
+  </style>
+</head>
 
-    <!-- Bootstrap core CSS -->
-    <link href="./dist/bootstrap.css" rel="stylesheet">
-    <link href="./dist/theme.css" rel="stylesheet">
-<link rel="stylesheet" href="http://stlpublicradio.github.io/legislature-tracker/dist/legislature-tracker.latest.css" type="text/css">
-    <!--[if lte IE 8]>
-      <link rel="stylesheet" href="./dist/legislature-tracker.latest.ie.css" type="text/css">
+<body>
+  <a href="https://github.com/MinnPost/legislature-tracker"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork the Legislature Tracker on GitHub"></a>
 
-    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-  </head>
-
-  <body>
-	  <script type="text/javascript" src="./dist/legislature-tracker.libs.js" charset="utf-8"></script>
-	  <script type="text/javascript" src="./dist/legislature-tracker.latest.min.js"></script>
-
-    <div class="navbar navbar-default" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-<!--          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button> -->
-          <a class="navbar-brand" href="http://news.stlpublicradio.org"><img class="logo" src="./dist/images/bg-station-bug.png"></a>
-        </div>
-        <div class="collapse navbar-collapse">
-          </ul>
-        </div><!--/.nav-collapse -->
+  <div class="container">
+    
+    <div class="masthead">
+        <h4 class="muted">Examples</h4>
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="container">
+              <ul class="nav">
+                <li><a href="./examples/ny-dev.html">NY</a></li>
+                <li><a href="./examples/mn-dev.html">MN</a></li>
+                <li><a href="./examples/fl-dev.html">FL</a></li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- /.navbar -->
       </div>
-    </div>
-
-    <div class="container">
-
-	    <div class="row">
-		    <div class="col-md-12">        <h1>Missouri Legislature Tracker</h1>
-		    </div></div>
-<div class="row">      <div class="col-sm-6 col-md-8">
-<p>	Welcome to St. Louis Public Radio and the Beacon's Missouri Legislature Tracker.
-</p>
-	<p>We've selected several bills to keep an eye on in the coming months. You can choose a category below, or click "Recent" to see the bills we're tracking that have had some action in the past 7 days.</p>
-
-	<p>Once you've chosen an area, you'll be able to see a list of bills and summaries. You can also click "More Detail" on any bill to see recent actions, sponsors and links to the bill on Missouri government Web sites.</p></div>
-	<div class="col-sm-6 col-md-4 hidden-xs">
-		<a href="http://news.stlpublicradio.org/programs/politically-speaking"><img class="center-block"  src="./dist/images/politically-speaking.jpg"></a></div></div>
-	        <div class="row"><div id="legislature-tracker-container">
-        </div></div>
-        <div id="licensing">
-    	        <p>Fork of MinnPost's Legislature Tracker. More info available on <a href="http://minnpost.github.io/legislature-tracker" title="Legislature Tracker">Github</a>.</p>
-    <p>Some icons provided by <a href="http://thenounproject.com" title="NounProject">The Noun Project</a>. Congress by Martha Ormiston; Energy by NDSTR; GayMarriage by MaurizioFusillo; Education by Thibault Geffroy; Time by Richard de Vos; Capital by Jonathan Keating; Paper by Tom Schott; Bank by Ilaria Baggio; Group by Alexandra Coscovelnita; Check mark by Spencer Cohen; Back by John Chapman; Gun by Edward Boatman.</p></div>
-      </div>
-</div>
-
-    </div><!-- /.container -->
-
-<script type="text/javascript">
-      (function($, w, undefined) {
-        var options = _(LT.defaultOptions).extend({
-          el: '#legislature-tracker-container',
-          state: 'MO', 
-          session: '2014',
-          OSKey: '7b006c11c5dd40ba89efc4e67901a0ce',
-          eKey: '0AirWnBDqOSL_dGZ6RVRtVTRuOGxLS05ZMXQwVlMxdGc',
-          imagePath: './dist/images/'
-        });
   
-        var app = new LT.Application(options);
-  
-      })(jQuery, window);
-    </script>
+    <div class="readme-content"><em>Loading content...</em></div>
+  </div>
+        
+    
+  <!-- Application libraries and JS -->
+  <script type="text/javascript" src="./dist/legislature-tracker.libs.js"></script>
+  <script type="text/javascript" src="./gh-pages/markdown-master-20130501.js"></script>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="./dist/bootstrap.min.js"></script>
-    <script type="text/javascript">
-    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script>
-    <script type="text/javascript">
-     var pageTrackerA = _gat._getTracker("UA-2139719-1");
-     pageTrackerA._initData();
-     pageTrackerA._trackPageview();
 
-     var pageTrackerB = _gat._getTracker("UA-1741309-15");
-     pageTrackerB._initData();
-     pageTrackerB._trackPageview();
-    </script>
-  </body>
+  <!-- Run application -->
+  <script type="text/javascript">
+    (function($, w, undefined) {
+      $.get('./README.md', function(readme) {
+        $('.readme-content').html(markdown.toHTML(readme));
+      });
+    })(jQuery, window);
+  </script>
+
+</body>
 </html>
