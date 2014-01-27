@@ -1,3 +1,0 @@
-/**
- * Collections for Legislature Tracker
- */(function(e,t,n){LT.CategoriesCollection=Backbone.Collection.extend({model:LT.CategoryModel,comparator:function(e){return e.get("title").toLowerCase().indexOf("recent")!==-1?"zzzzz":e.get("title")}});LT.BillsCollection=Backbone.Collection.extend({model:LT.BillModel,comparator:function(e){var t=e.newestAction()?e.newestAction().date.unix()*-1:e.get("title");return t}});LT.OSBillsCollection=Backbone.Collection.extend({model:LT.OSBillModel,comparator:function(e){var t=e.get("newest_action");t&&(t=t.date.unix()*-1);return t}})})(jQuery,window);
